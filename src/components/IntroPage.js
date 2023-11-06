@@ -1,37 +1,27 @@
-import React from 'react';
-import IntroBackground1 from "./IntroBackground1.jpg";
+import React from "react";
 import myPhoto from "./myPhoto.png";
+import './IntroPage.css'
 
 export default function IntroPage() {
   return (
-    <div className="card text-bg-dark">
-      <img
-        src={IntroBackground1}
-        className="card-img"
-        alt="Intro_Background_1"
-        style={{ height: "100vh", opacity: 0.2 }}
-      />
-      <div className="card-img-overlay text-start container lh-lg">
-        <img
-          src={myPhoto}
-          className="rounded float-start img-thumbnail"
-          alt="my_photo"
-          style={{ background: "transparent", borderColor: "transparent" }}
-        />
-        <div className="container pb-5">
-          <h1 className="card-title fw-bold">Full Stack Developer</h1>
-          <p className="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-          <p className="card-text">
-            <small>Last updated 3 mins ago</small>
-          </p>
-          <a href="/" className="btn btn-primary">
-            Go somewhere
-          </a>
-        </div>
+    <div className="container introContainer">
+      <img src={myPhoto} alt="my_image" width={250} />
+      <div className="content text-light text-start lh-base">
+        <h1 className="text-decoration-underline text-uppercase">I am web developer.</h1>
+        <p className="fs-4">
+          Creative Front End Developer proficient in crafting engaging web
+          experiences using HTML, CSS, JavaScript, and React.js for dynamic and
+          interactive user interfaces.
+        </p>
+        <p className="fst-italic fs-4">
+          "Explore my portfolio for innovative web designs and interactive user
+          experiences."
+        </p>
+        <button type="button" className="btn btn-primary btn-lg">
+          Let's go...
+        </button>
       </div>
     </div>
   );
 }
+

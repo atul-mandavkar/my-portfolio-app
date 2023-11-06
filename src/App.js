@@ -1,11 +1,12 @@
 //import logo from './logo.svg';
 import './App.css';
-import IntroPage from './components/IntroPage';
+import BackgroundStyle from './components/BackgroundStyle';
+//import IntroPage from './components/IntroPage';
 
 function App() {
   return (
     <div className="App">
-      <IntroPage />
+      <BackgroundStyle />
     </div>
   );
 }

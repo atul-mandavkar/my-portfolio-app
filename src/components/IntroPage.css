@@ -1,0 +1,24 @@
+@media only screen and (min-width: 1024px) {
+  /* CSS rules for large devices */
+  /* Add your styles here */
+  .introContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 15%;    
+  }
+  img{
+    flex-basis: 50%;
+  }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Your CSS code for medium devices here */
+    .introContainer{
+        padding-top: 10%;
+    }
+    .content{
+        text-align-last: center;
+    }
+}
