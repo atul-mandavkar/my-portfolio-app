@@ -1,0 +1,17 @@
+/* this style to remove scroll bar from pagbe when image is made to fit the screen*/
+body {
+  overflow: hidden;
+}
+/* Media query for smaller screens as it overflow is causing problem */
+@media (max-width: 768px) {
+  body{
+    overflow: auto;
+    scrollbar-width: none;
+  }
+}
+
+/* Media query for mobile orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  /* not problem here but in IntroPage which is too large for mobile orientation it must be work like laptop in mobile orientation
+  also not work with different mobile sizes too. */  
+}

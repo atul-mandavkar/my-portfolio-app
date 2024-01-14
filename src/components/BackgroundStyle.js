@@ -1,23 +1,30 @@
-import React from 'react';
-import IntroBackground1 from './IntroBackground1.jpg';
+import React from "react";
+import IntroBackground1 from "./IntroBackground1.jpg";
+import "./BackgroundStyle.css"; // Import the CSS file
 import IntroPage from './IntroPage.js';
+// imported card-overlay code from bootstrap and inside this card we do not show text instead we show another card
+// and also made the text to be appeared at center of page
 
-export default function BackgroundStyle() {
+function BackgroundStyle() {
   return (
-    <div
-      className="myDiv"
-      style={{
-        backgroundImage: `url(${IntroBackground1})`,
-        minWidth: "100vw",
-        minHeight: "100vh",
-      }}
-    >
-      <div
-        className="overlay bg-dark bg-opacity-75"
-        style={{ minWidth: "100vw", minHeight: "100vh" }}
-      >
-        <IntroPage />
+    <div>
+      <div className="card text-bg-dark">
+        <img
+          src={IntroBackground1}
+          className="card-img opacity-25"
+          alt="backgroun_image"
+          style={{
+            height: "100vh",
+            width: "100%",
+            objectFit: "cover",
+          }} /* style of image is set to fit each screen by scren height */
+        />
+        <div className="card-img-overlay d-flex align-items-center">
+          <IntroPage /> {/* another card */}
+        </div>
       </div>
     </div>
   );
 }
+
+export default BackgroundStyle;
