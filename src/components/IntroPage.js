@@ -1,4 +1,5 @@
 import React from "react";
+import "./IntroPage.css";
 import myPhoto from "./myPhoto.png";
 // here we imported horizontal card from bootstrap to show image and text side by side. only text-color is changed.
 
@@ -12,17 +13,18 @@ function IntroPage() {
               src={myPhoto}
               className="img-fluid rounded-start"
               alt="my_image"
+              width={200}
             />
           </div>
-          <div className="col-md-8">
-            <div className="card-body">
+          <div className="col-md-8 d-flex align-items-center">
+            <div className="card-body text-start">
               <h1 className="card-title text-uppercase">I am web developer</h1>
-              <p className="card-text fs-5">
+              <p className="card-text fs-md-5 fs-sm-4">
                 Creative Front End Developer proficient in crafting engaging web
                 experiences using HTML, CSS, JavaScript, and React.js for
                 dynamic and interactive user interfaces.
               </p>
-              <p className="card-text fs-6">
+              <p className="card-text fs-md-4 fs-sm-3">
                 <strong className="text-body-light fst-italic">
                   "Explore my portfolio for innovative web designs and
                   interactive user experiences."

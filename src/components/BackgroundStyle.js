@@ -14,12 +14,12 @@ function BackgroundStyle() {
           className="card-img opacity-25"
           alt="backgroun_image"
           style={{
-            height: "100vh",
+            minHeight: "100vh",
             width: "100%",
             objectFit: "cover",
           }} /* style of image is set to fit each screen by scren height */
         />
-        <div className="card-img-overlay d-flex align-items-center">
+        <div className="card-img-overlay">
           <IntroPage /> {/* another card */}
         </div>
       </div>
