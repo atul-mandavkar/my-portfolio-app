@@ -1,0 +1,73 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.parent-container {
+  display: inline-block; /* make parent container's size adjust by child component here card*/
+  overflow: hidden;
+  background-image: url('IntroBackground1.jpg'); /* Replace 'your-image.jpg' with your actual image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+.blackScreen{
+    background-color: rgba(0,0,0,0.5);/* set black transparent screen on parent background */
+}
+
+/* Media query for small devices in landscape mode */
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  /* Your CSS styles for small devices in landscape mode go here */
+  .col-md-4{
+    width: 40%;
+  }
+  .col-md-8{
+    width: 60%;
+  }
+}
+
+
+/* Media query for medium-sized screens in portrait mode */
+@media only screen and (min-width: 600px) and (max-width: 1024px) and (orientation: portrait) {
+  /* Your CSS styles for medium-sized screens in portrait mode go here */
+  
+  .col-md-4{
+    width: 100%;
+  }
+  .col-md-8{
+    width: 100%;
+  }
+  .card-title{
+    font-size: 300%;
+  }
+  .card-text{
+    font-size: 200%;
+  }
+}
+
+/* Media query for medium devices in landscape mode */
+@media only screen and (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
+  /* Your CSS styles for medium devices in landscape mode go here */
+  .col-md-4{
+    width: 40%;
+  }
+  .col-md-8{
+    width: 60%;
+  }
+}
+
+/* Media query for large devices */
+@media only screen and (min-width: 1025px) {
+  /* Your CSS styles for large devices go here */
+  body{
+    overflow: hidden;
+  }
+  .card{
+    margin: 10% 0;
+  }
+  
+}

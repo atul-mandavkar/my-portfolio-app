@@ -1,12 +1,11 @@
 //import logo from './logo.svg';
 import './App.css';
-import BackgroundStyle from './components/BackgroundStyle';
-//import IntroPage from './components/IntroPage';
+import Home from './components/Home';
 
 function App() {
   return (
     <div className="App">
-      <BackgroundStyle />
+      <Home />
     </div>
   );
 }
