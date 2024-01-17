@@ -1,6 +1,8 @@
 import React from "react";
-import "./Home.css";
+ import "./Home.css";
 import myPhoto from "./myPhoto.png";
+import { Link } from "react-router-dom"; // imported Link from router dom
+// a tag is replace by Link tag and href attribute of a is replace by to attribute
 
 function Home() {
   return (
@@ -29,9 +31,9 @@ function Home() {
                     interactive user experiences."
                   </small>
                 </p>
-                <a href="/" className="btn btn-primary">
+                <Link to="/HomeMain" className="btn btn-primary">
                   Let's Go
-                </a>
+                </Link>
               </div>
             </div>
           </div>
